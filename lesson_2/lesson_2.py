@@ -11,7 +11,7 @@
 # print(variable_1 + variable_2)  # newstudent
 # print(variable_1,                    variable_2)  # new student
 
-# # todo питання півбесіда Які типи данних є в Python.
+# # todo питання cпівбесіда Які типи данних є в Python.
 # variable_1 = 10
 # variable_2 = 20
 # print(variable_1)
