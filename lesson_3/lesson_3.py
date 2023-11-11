@@ -192,16 +192,3 @@
 # print(type(list_of_number), list_of_number)
 # print(list_of_number[1])
 
-
-
-# str split,
-
-# a = (3,4,4)
-# print(a[0])
-
-
-# for i in "Робіть домашку":
-#     print(i)
-
-
-# linkedin рекрутери. Пододавайте один одного в друзі.
