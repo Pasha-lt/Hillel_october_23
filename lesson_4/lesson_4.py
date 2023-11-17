@@ -115,6 +115,7 @@
 # print(id(tuple_2))
 
 import time
+
 # while True:  # ТАК НІКОЛИ НЕ РОБІТЬ
 #     time.sleep(1)
 #     print(1)
@@ -149,7 +150,4 @@ balance = 15000000
 # print(text)
 
 # Патерн DRY = don't repeat your self
-
-# # linkedin рекрутери. Пододавайте один одного в друзі.
-
-
+# linkedin рекрутери. Пододавайте один одного в друзі.
