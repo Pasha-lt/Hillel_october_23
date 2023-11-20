@@ -190,31 +190,3 @@ def foo(number_1 : int | float, number_2 : int | float):  # РЕКОМЕНДУЮ
 
 print(foo(number_1=3, number_2=4))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# ascii (укрстрінг), ord VS chr
-# YAGNI (You Aren't Going to Need It — «Вам це не знадобиться»)
