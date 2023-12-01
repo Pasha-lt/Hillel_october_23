@@ -56,7 +56,7 @@
 # print(True and bool(1))  # True
 
 
-# # форматування коду в пайчармі.  # MAC option+command + l  Windows/Linux cntr + alt + L
+# # форматування коду в пайчармі.  # MAC option+command + l  Windows/Linux cntr + alt + l
 # a        =  23 + 999
 # print(   a)
 
@@ -92,7 +92,7 @@
 # print(my_string.lstrip("+"))  # abc +++ fdfds +++
 # print(my_string.rstrip("+"))  # +++ abc +++ fdfds
 
-#   count
+# count
 # print(my_string.count("ab"))  # кількість елементів або слів, складів в колекції
 
 # isdigit, isalpha - повертає результат в булевому типі даних
@@ -191,4 +191,3 @@
 # list_of_number = string_a.split()
 # print(type(list_of_number), list_of_number)
 # print(list_of_number[1])
-

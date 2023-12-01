@@ -161,3 +161,4 @@ cython_debug/
 
 
 lesson_7/chromedriver
+.DS_Store

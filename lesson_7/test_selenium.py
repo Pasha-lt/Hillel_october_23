@@ -7,11 +7,11 @@ from selenium.webdriver.common.keys import Keys
 
 
 class Test12321():
-    def setup_method(self, method):
-        self.driver = webdriver.Chrome(executable_path="./chromedriver")
+    def setup_method(self):
+        self.driver = webdriver.Chrome()
         self.vars = {}
 
-    def teardown_method(self, method):
+    def teardown_method(self):
         self.driver.quit()
 
     def test_12321(self):

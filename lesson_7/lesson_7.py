@@ -80,31 +80,31 @@ def concatenate(string_a : str, string_b : str) -> str:
 # a, b, *c = [2, 3, 4, 4, 5, 6]
 # print(a, b, c)
 
-# def foo(*args) ->int|float:
-#     age, height, *list_2 = args
-#     if list_2 != []:
-#         for i in list_2:
-#             print(i)
-#
-#     print(age, height)
-#     return "sum(list_1)"
-#
-# print(foo(34, 43))
+def foo(*args) ->int|float:
+    age, height, *list_2 = args
+    if list_2 != []:
+        for i in list_2:
+            print(i)
+
+    print(age, height)
+    return "sum(list_1)"
+
+print(foo(34, 43))
 
 
 
-# def foo2(*args, **kwargs):
-#     grades_list = args
-#     dict_1 = kwargs
-#     print(dict_1)
-#     print(grades_list)
-#
-# foo2(33, 200, 90, a=22, b=77, c=45)
-# dict_a = {33:32}
-# dict_b = {30:100}
-#
-# dict_c = {**dict_a, **dict_b}
-# print(dict_c)
+def foo2(*args, **kwargs):
+    grades_list = args
+    dict_1 = kwargs
+    print(dict_1)
+    print(grades_list)
+
+foo2(33, 200, 90, a=22, b=77, c=45)
+dict_a = {33:32}
+dict_b = {30:100}
+
+dict_c = {**dict_a, **dict_b}
+print(dict_c)
 
 
 # import
