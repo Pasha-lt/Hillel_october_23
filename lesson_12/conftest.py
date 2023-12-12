@@ -8,4 +8,4 @@ def fixture_random(request):
     status_code = response.status_code
     request.cls.response = response
     request.cls.status_code = status_code
-    yield response
+    yield response, status_code
