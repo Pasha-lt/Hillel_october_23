@@ -5,7 +5,7 @@ class ElementsPage:
     def __init__(self, driver):
         self.driver = driver
         self.url = "https://demoqa.com/elements"
-        self.element_categories = By.XPATH, "//div[contains(@class, show)]//li"
+        self.element_categories = By.XPATH, f"//div[contains(@class, show){name}]//li"
 
     def open(self):
         self.driver.get(self.url)
