@@ -1,0 +1,152 @@
+# потрібно відсіяти в списку меньше і рівні 5
+a = [3, 3, 3, 4, 5, 7, 7, 8, 9, 0, 5, 5, 5, 7, 8, 9, 132]
+---
+
+# Потрібно поміняти ключі і значення місцями в словнику.
+c = {123:'123', (12,23,4):12, 'kie':'ffds'}
+---
+
+
+# інша компанія
+# Напишіть програму котра буде вираховувати факторіал використовуючи функціональне програмування.
+
+
+
+# інша компанія
+# task 1
+# Нужно написать функцию которая принимает два списка и выдает список с поочередными элементами из списка 1 и 2
+# [1, 2, 3, 4], [7,6,9] =>> [1, 7, 2, 6, 3, 9, 4]
+
+# task2
+# Нужно исправить код и дописать вызовы в assert'ах чтобы отработали assert'ы
+class Folder(object):
+    def __init__(self, name):
+        self.name = name
+
+    @property
+    def path(self):
+        return '/%s' % self.name
+
+
+folder1 = Folder('picture')
+assert(folder1.name == 'picture')
+assert(folder1.path == '/picture')
+
+assert(folder2.name == 'nature')
+assert(folder2.path == '/pictures/nature')
+
+assert(folder1.name == 'pic')
+assert(folder2.path == '/pic/nature')
+
+# Другая компания
+# task_1
+# Using this list of hotels:
+# hotels = [{'name': 'Hilton', "locations": 2345}, {'name': "Accor", 'locations': 789}, {'name': 'W', "locations":678}]
+# Please write code to create a new list of hotel names by each of these methods:
+# - using for loops
+# - using list comprehensions
+# - using the map() functions
+
+hotels = [{'name': 'Hilton', "locations": 2345}, {'name': "Accor", 'locations': 789}, {'name': 'W', "locations":678}]
+
+
+print(list_map)
+print(list_comprehension)
+print(list_loop)
+
+# task_2
+# Write a function named word_count that takes in a string. Return a dictionary with each word in the string as the key
+# end the number of times it appers as the value.
+
+
+# task_4
+# Given the list bellow, write code to remove duplicates and preserve initial order of elements occurrence.
+# amenities = ['free wifi', 'breakfast', 'gym', 'breakfast', 'pool', 'restaurant']
+amenities = ['free wifi', 'breakfast', 'gym', 'breakfast', 'pool', 'restaurant']
+
+# task_5
+# Write a decorator that will print the execution of the method it decorates.
+
+from datetime import datetime
+
+
+# task_6
+# Write a function that will remember parameters passed to it and if such parameters have already been passed - will not
+# waste time on their calculation in a second time. Do not use ready-made solutions, but make yours.
+# As an example, you can take the following function:
+# from time import sleep
+# def delayed_greeting(name):
+#     sleep(5)
+#     return f'Hey, {name}!'
+# delayed_greeting('Bob')
+# delayed_greeting('Bob')
+
+
+# Task 7
+# Write a function that takes a list of numbers, and for each list element it should find the product of rest list
+# elements excluding the current one.
+# For example, given: [2, 5, 3, 4]
+# Your function should return: [60, 24, 40, 30]
+# By calculating: [5*3*4, 2*3*4, 2*5*4, 2*5*3]
+
+
+
+# Другая компания
+# пример оптимизации кода когда запускаем последовательность
+def foo(a):
+    return a ** 2
+
+
+def bar(a):
+    return a - 1
+
+# Используя команду ifconfig найти ipv4, ipv6, mtu
+
+# new interview
+'''
+write function for this param.
+example_true = "ab(a(b(c)d)eeezv)"
+example_false1 = ")("
+example_false2 = "((a)"
+example_false3 = "abc())("
+'''
+
+# new_company
+# Написать код который будет выозвращать два ближних числа к заданому одно меньше, второе больше по значению.
+'''
+8. You have a list of numbers (Integers) and target number (Integer). Task is to find in a list closest number(s) to defined target number.
+Custom example:
+some_list = [4, 2, 10, 7]
+target = 5
+Result will be: result_list = [4, 7]
+'''
+
+# Отсортировать список через лист компрехеншн чтобы он вернул значения выше 2
+old_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+
+# Вводиться строка слов. Программа должна вывести на экран слова строки по возрастанию их длины.
+
+
+# Написать код который в l3 добавит все елементы из l1 и l2 которые есть в двух списках
+l1 = ['a', 'd', '23', 'fff', '67']
+l2 = ['fgd', 'ty', '23', '67', 'fhj', 'rrew']
+l3 = set(l1).intersection(set(l2))
+print(l3)
+
+"""
+1. склеить два массива: [1, 2, 3, 4], [7, 8] -> [1, 7, 2, 8, 3, 4]. Длина массивов может быть разной
+Использовать рекурсию
+"""
+
+
+# У вас есть массив чисел. Напишите три функции, которые вычисляют сумму этих чисел: с for-циклом, с while-циклом, с рекурсией.
+
+
+######new company########
+"""
+Given a string of parentheses - `()[]{}`, implement a function called `is_balanced`
+that returns `True` or `False` if the parentheses are balanced
+(think about a code fragment where all other characters were filtered).
+We can assume only the above 6 characters exist in the input string.
+"""
