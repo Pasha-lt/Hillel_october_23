@@ -165,33 +165,3 @@ class ExpandableTreeElement(Component):
         state = self.__change_folder_selection_state(name, enabled=False)
         return state
 
-
-
-class RadioButton:
-    def __init__(self, driver:WebDriver=None, locator:tuple=None, name:str=None):
-        self.driver = driver
-        self.locator = locator
-        self.by, self.loc = self.locator
-        if name:
-            self.name: str = name
-            self.loc = self.loc.format(self.name)
-
-    def select(self, name: str = None) -> None:
-        # буде імя то підем по імені
-        if self.name:
-            self.driver.find_element(self.by, f"{self.loc}/label").click()
-        # якщо імя не буде то звернемось по локатору
-        else:
-            self.driver.find_element(*self.locator).click()
-
-    def is_selected(self) -> bool:
-        element = self.driver.find_element(By.XPATH, f'{self.locator}/input')
-        return element.is_selected()
-
-def test_widget(chrome):
-    chrome.get("https://demoqa.com/radio-button")
-    ra_yes = RadioButton(driver=chrome,
-                         locator=(By.XPATH, "//label[.='{}']//ancestor::div[contains(@class, 'radio')]"),
-                         name="Yes")
-
-    ra_yes.select()
