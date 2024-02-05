@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="6" time="3.041" timestamp="2024-02-02T14:16:19.408986" hostname="MacBook.lan"><testcase classname="test_p.test_pytest_comand" name="test_1" time="0.000" /><testcase classname="test_p.test_pytest_comand" name="test_2" time="1.003"><failure message="assert False">def test_2():
+        time.sleep(1)
+&gt;       assert False
+E       assert False
+
+test_pytest_comand.py:8: AssertionError</failure></testcase><testcase classname="test_p.test_pytest_comand" name="test_3" time="0.000" /><testcase classname="test_p.test_pytest_comand" name="test_4" time="2.004" /><testcase classname="test_p.test_pytest_comand" name="test_5" time="0.000" /><testcase classname="test_p.test_pytest_comand" name="test_6" time="0.000"><failure message="assert False">def test_6():
+&gt;       assert False
+E       assert False
+
+test_pytest_comand.py:21: AssertionError</failure></testcase></testsuite></testsuites>
