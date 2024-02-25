@@ -1,9 +1,9 @@
 import pytest
 from Hillel_october_23.lesson_22.CheckboxPage import CheckboxPage
 
-@pytest.mark.usefixtures("chrome_class")
+@pytest.mark.usefixtures("firefox")
 class TestCheckboxPage:
-    def setup(self):
+    def setup_method(self):
         self.page = CheckboxPage(self.driver)
 
     def test_page(self):
