@@ -1,0 +1,44 @@
+структура таблички бази даних називаються сутностями(entity)
+поле в табличці буде називатись атрибутом
+строка в бд кортеж
+якщо хочте в середині шелу використовувати термінал то пишете ".shell" + "команда"
+створення БД
+create table Data(data_id INTEGER PRIMARY KEY, name TEXT, data INTEGER CHECK(data<10));
+CREATE TABLE Vendors(vendor_id INTEGER PRIMARY KEY, name TEXT NOT NULL UNIQUE, item TEXT, deal INTEGER, price REAL);
+вставити значення в табличку Data - табличка
+INSERT INTO Data(name, data) VALUES('Hello', 13);
+моди для кращої візуалізізації
+.headers ON - виводить тайли таблички
+.mode columns - вирівнює таблички і значення.
+ALTER TABLE Data rename to NewData; - перейменування табличка
+ALTER TABLE NewData ADD COLUMN counter integer; - додати стовпець
+drop table Data3; - видалення таблички з БД
+вставити відразу багато значень
+insert into Vendors(name, item, deal, price) Values("John", "Train", 3, 14.5), ("Jerom", "Tram", 1, 2.4), ("Anna", "Plane", 7, 100), ("Igor", "Helicopter", 11, 1200);
+
+select name, deal, price * 100, 'c' as currency from Vendors; - вивід таблички з зміною стовпця
+вивід унікальних значень select distinct item from Vendors;
+select * from Vendors order by price; - сортування по прайсу
+select * from Vendors order by price, deal desc;
+select * from Vendors limit 5;
+select * from Vendors limit 5 offset 3;
+select * from Vendors where price=14.4; - вивід по повному співпадінню
+select * from Vendors where price>=14.4;
+select * from Vendors where price=14.4 and item="Car";
+select * from Vendors where price in (100, 14.4);
+select * from Vendors where price between 14.4 and 100;
+select * from Vendors where deal is null;
+регулярки
+% - будь яка кількість символів
+_ - один конкретний символ
+select * from Vendors where name like "O%";
+
+select sum(price) from Vendors;
+AVG, COUNT, MAX, MIN, SUM
+
+select * from Vendors group by deal;
+select deal, sum(price) from Vendors group by deal;
+select deal, sum(price) from Vendors where price>=14.5 group by deal;
+---select * from Vendors where price>avg(price)--- так не буде працювати
+ось так правильно.
+select * from Vendors where price>(select avg(price) from Vendors);
