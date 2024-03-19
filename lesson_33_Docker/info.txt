@@ -1,0 +1,20 @@
+=база кінець=
+Dockerfile->image->container
+образ-image
+sudo docker build . - збілдити Dockerfile, крапочка вказує що ви в цій директорії, якщо файл знаходить
+ в іншому місці до нього потрібно прописати шлях
+docker images - подивитись образ
+sudo docker run -it ff3bb4d61fcc bash - запуск контенера -it дозволяє зайти в середину контейнера,
+команда bash запускає термінал
+docker ps - подивитись контейнери
+docker rm 4c6b4f471945 - видалення контейнера, ось ці цири це container_id
+docker stop 5b9010a66423 - зупинка контенера, якщо контейнер запущений(UP) то ви його не видалите, його треба зупинити.
+docker exec -it ff3bb4d61fcc bash - зайти в контейнер, перед цим його потрібно запустити
+=база кінець=
+
+sudo docker cp b021029db162:/home/result.xml /Users/pavlokostyshen/Desktop/hillel/Hillel_october_23/lesson_32_Docker - для копіювання файлу з контейнера,
+з самого контейнера це не відпрацює вам потрібно вийти в термінал операційної системи.
+b021029db162:/home/result.xml - звідки копіюємо. b021029db162 - айді контейнера
+/Users/pavlokostyshen/Desktop/hillel/Hillel_october_23/lesson_32_Docker - куди ми копіюємо
+
+sudo docker system prune -a = видалити контейнери і образи які не використовуються
