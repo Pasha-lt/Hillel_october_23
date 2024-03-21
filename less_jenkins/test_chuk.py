@@ -1,11 +1,14 @@
 import pytest
 import requests
 
+from Hillel_october_23.less_jenkins.setting import *
+
+# url = https://api.chucknorris.io/
 class TestClass:
 
     @classmethod
     def setup_class(cls):
-        cls.response = requests.request("GET", "https://api.chucknorris.io/jokes/random")
+        cls.response = requests.request("GET", f"{url}jokes/random")
         print(1)
 
     @classmethod
@@ -19,3 +22,6 @@ class TestClass:
     @pytest.mark.parametrize("key", ['created_at', 'icon_url', 'id', 'updated_at', 'url', 'value'])
     def test_keys(self, key):
         assert self.response.json()[key]
+
+    def test_simple_value(self):
+        assert value == 2024
