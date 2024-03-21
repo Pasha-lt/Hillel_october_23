@@ -1,7 +1,7 @@
 import pytest
 import requests
 
-from Hillel_october_23.less_jenkins.setting import *
+from setting import *
 
 # url = https://api.chucknorris.io/
 class TestClass:
