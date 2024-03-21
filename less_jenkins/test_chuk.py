@@ -24,4 +24,6 @@ class TestClass:
         assert self.response.json()[key]
 
     def test_simple_value(self):
-        assert value == '2024'
+        print(value)
+        print('admin')
+        assert value == 'admin'
