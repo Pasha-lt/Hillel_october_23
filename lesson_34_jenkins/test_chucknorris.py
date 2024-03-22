@@ -1,6 +1,6 @@
 import pytest
 import requests
-
+from setting import value
 
 @pytest.mark.usefixtures("fixture_random")
 class TestRandom:
@@ -25,6 +25,12 @@ def test_categories(category):
     URL = f"https://api.chucknorris.io/jokes/random?category={category}"
     response = requests.request(method="GET", url=URL)
     assert len(response.json()["id"]) == 22
+
+
+def test_password():
+    assert value == 'admin'
+
+
 
 # Зробити окремий клас
 # пошук жарту по конретному слову  https://api.chucknorris.io/jokes/search?query={query}
