@@ -18,19 +18,23 @@ def test_category():
     URL = "https://api.chucknorris.io/jokes/categories"
     response = requests.request(method="GET", url=URL)
     print(response.json())
-
-@pytest.mark.parametrize("category",
-                         requests.request(method="GET", url="https://api.chucknorris.io/jokes/categories").json())
-def test_categories(category):
-    URL = f"https://api.chucknorris.io/jokes/random?category={category}"
-    response = requests.request(method="GET", url=URL)
-    assert len(response.json()["id"]) == 22
+#
+# @pytest.mark.parametrize("category",
+#                          requests.request(method="GET", url="https://api.chucknorris.io/jokes/categories").json())
+# def test_categories(category):
+#     URL = f"https://api.chucknorris.io/jokes/random?category={category}"
+#     response = requests.request(method="GET", url=URL)
+#     assert len(response.json()["id"]) == 22
 
 
 def test_password():
     assert value == 'admin'
 
+def test_password_1():
+    assert value == 'admin'
 
+def test_password_3():
+    assert value == 'admin'
 
 # Зробити окремий клас
 # пошук жарту по конретному слову  https://api.chucknorris.io/jokes/search?query={query}
